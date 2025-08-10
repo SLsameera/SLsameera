@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="si">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>මගේ ව්‍යාපෘතිය</title>
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, 'Apple Color Emoji', 'Segoe UI Emoji'; margin: 0; padding: 2rem; line-height: 1.6; }
+    .container { max-width: 720px; margin: 0 auto; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 24px; box-shadow: 0 1px 2px rgba(0,0,0,0.04); }
+    .btn { display: inline-block; background: #111827; color: white; padding: 10px 16px; border-radius: 8px; text-decoration: none; }
+    .btn:hover { background: #0b1220; }
+    pre { background: #0b1220; color: #e5e7eb; padding: 12px; border-radius: 8px; overflow: auto; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>වෙනසකට සූදානම්ද? 🚀</h1>
+    <div class="card">
+      <p>Node.js + Express ප්‍රධාන පෙළේ සිදු කරමින් ඔබේ ව්‍යාපෘතිය සකසා දුන්නා.</p>
+      <ul>
+        <li><strong>Dev run</strong>: <code>pnpm i</code> සහ <code>pnpm dev</code></li>
+        <li><strong>Health</strong>: <a href="/api/health">/api/health</a></li>
+      </ul>
+      <a class="btn" href="https://expressjs.com/">Express ලිපිගොනු</a>
+    </div>
+    <h2>උදාහරණ fetch</h2>
+    <pre><code>fetch('/api/health').then(r => r.json()).then(console.log)</code></pre>
+  </div>
+</body>
+</html>
